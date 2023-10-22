@@ -29,7 +29,6 @@ app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
-    from: 'sebashersan@gmail.com',
     to: 'hernandez2019251010@unitropico.edu.co',
     subject: 'Nuevo mensaje de contacto',
     text: `Nombre: ${name} \nCorreo: ${email} \nMensaje: ${message}`,
